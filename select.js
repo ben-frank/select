@@ -7,7 +7,7 @@ jQuery(function($) {
 			return this.each(function(){
 
 				var $this = $(this);
-				var data = $this.data('myDamnCheckbox');
+				var data = $this.data('mySelectbox');
 
 				var selected = data.clicked;
 
@@ -23,7 +23,7 @@ jQuery(function($) {
 			return this.each(function(){
 
 				var $this = $(this);
-				var data = $this.data('myDamnCheckbox');
+				var data = $this.data('mySelectbox');
 
 				data.container = $('<div></div>');
 
@@ -71,7 +71,7 @@ jQuery(function($) {
 			return this.each(function(){
 
 				var $this = $(this);
-				var data = $this.data('myDamnCheckbox');
+				var data = $this.data('mySelectbox');
 
 				data.target.children().each(function(){
 
@@ -103,7 +103,7 @@ jQuery(function($) {
 
 				if(!data){
 
-					$(this).data('myDamnCheckbox', {
+					$(this).data('mySelectbox', {
 
 						target : $this,
 						options : [] 
