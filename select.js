@@ -29,7 +29,7 @@ jQuery(function($) {
 
 				$this.after(data.container);
 
-				data.current = $('<div>current</div>');
+				data.current = $('<div></div>');
 				data.listOptions = $('<ul></ul>');
 
 				data.container.append(data.current);
@@ -110,7 +110,6 @@ jQuery(function($) {
 
 					});
 
-					//$this.setOptions();
 					$this.mySelectbox('setOptions');
 
 				}
